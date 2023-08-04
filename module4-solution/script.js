@@ -12,17 +12,14 @@
 // on the console should look like this:
 
 
-var byeSpeaker={};
+
 // STEP 7: Create an object, called 'byeSpeaker' to which you will attach
 // the "speak" method and which you will expose to the global context
 // See Lecture 52, part 1
 
 
 
-var speakWord = "Good Bye";
-byeSpeaker.speak=function(name) {
-  console.log(speakWord + " " + name);
-}
+
 
 
 
@@ -33,7 +30,11 @@ byeSpeaker.speak=function(name) {
 (function () {
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-
+var byeSpeaker={};
+var speakWord = "Good Bye";
+byeSpeaker.speak=function(name) {
+  console.log(speakWord + " " + name);
+}
 // STEP 10: (NOTHING TO DO. ALREADY DONE FOR YOU)
 // Loop over the names array and say either 'Hello' or "Good Bye"
 // using either the helloSpeaker's or byeSpeaker's 'speak' method.
